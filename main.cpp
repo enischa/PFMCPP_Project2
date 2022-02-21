@@ -7,9 +7,7 @@ void ignoreUnused(T&&...) { }
 Project 2 - Part 1 / 1
 video: Chapter 2 - Part 3
  Declarations Tasks
-
  Create a branch named Part1
-
  Purpose:  This project will teach you how to declare variables and free functions.  
  This will be the first project where the code you write will be compiled and you will be responsible for making sure it compiles before submitting it for review.
  
@@ -34,12 +32,10 @@ video: Chapter 2 - Part 3
 3) Declare 10 free functions
     each declaration should have a random number of parameters in the function parameter list.
     When naming your parameters, choose names that are relevant to the task implied by the function's name.
-
 4) add { ignoreUnused( ); } after each declaration in place of the closing semicolon
 5) pass each of your function parameters to the ignoreUnused function like you did in b)
 6) if your function returns something other than void, add 'return { };' at the end of it.
 7) provide default values for an arbitrary number of parameters in the function parameter list.
-
 8) consult the coding style guide found in the Readme.MD and adjust the formatting of your 10 functions.  At this point, you might have something that looks like this:
     float someFunc2(bool yes, int bar=2) { ignoreUnused(yes, bar ); return { }; }
     This does not conform with the coding standard for this course (check the Readme.MD) and needs to be corrected
@@ -196,15 +192,12 @@ void reaVerb(double roomSize = 12.32, bool byPass = false)
 }
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
-
  Commit your changes by clicking on the Source Control panel on the left, entering a message, and click [Commit and push].
  
  If you didn't already: 
     Make a pull request after you make your first commit
     pin the pull request link and this repl.it link to our DM thread in a single message.
-
  send me a DM to review your pull request when the project is ready for review.
-
  Wait for my code review.
  */
 
@@ -231,6 +224,13 @@ int main()
     auto timer = setTimer(12, 30);
     //9)
     auto name = surName(5);
+    //10)
+    reaVerb(10.40, true);
+    
+    ignoreUnused(carRented);
+    std::cout << "good to go!" << std::endl;
+    return 0;    
+}name = surName(5);
     //10)
     reaVerb(10.40, true);
     
