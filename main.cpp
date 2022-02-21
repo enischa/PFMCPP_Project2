@@ -108,7 +108,7 @@ bool eat(int pizzaSlice, char pizzaName)
 /*
  2)
  */
-void setLoopSettings(int barSize, double sampleRate = 44.1f)
+void setLoopSettings(int barSize, float sampleRate = 44.1f)
 
 {
   ignoreUnused(barSize, sampleRate);
@@ -159,10 +159,10 @@ double selectSubscriptionModel(int month, bool autoRenew)
 /*
  7)
  */
-double payCreditCard(char banckAccount, double minPayAmount)
+double payCreditCard(int bankAccount, double minPayAmount)
 
 {
-  ignoreUnused(dueDate, minPayAmount);
+  ignoreUnused(bankAccount, minPayAmount);
 
   return {};
 }
@@ -182,7 +182,7 @@ bool setTimer(int hour, int min)
 char selectAddress(int numbOfAddress)
 
 {
-  ignoreUnused(numbOfChar);
+  ignoreUnused(numbOfAddress);
 
   return{};
 }
@@ -216,25 +216,25 @@ int main()
     //1)
     auto eatedPizza = eat(3, 'V');
     //2)
-    looper(4, 44.1f);
+    setLoopSettings(4, 44.1f);
     //3)
     auto speed = speedUp(36, 15);
     //4)
-    auto airConditioner = airConditionerStart(27, false);
+    auto airConditioner = startAirConditioner(27, false);
     //5)
     checkOut(39.90, 18.2f);
     //6)
-    auto subscription = monthlySubscriptionPricing(7, true);
+    auto subscription = selectSubscriptionModel(7, true);
     //7)
-    auto creditcard = cardStatement(11.22, 390.20);
+    auto creditCard = payCreditCard(1, 390.20);
     //8)
     auto timer = setTimer(12, 30);
     //9)
-    auto name = surName(5);
+    auto name = selectAddress(5);
     //10)
-    reaVerb(10.40, true);
+    openReaVerbSettings(10.40, true);
     
-    ignoreUnused(carRented);
+    ignoreUnused(carRented, eatedPizza, setLoopSettings, speed, airConditioner, checkOut, subscription, creditCard, timer, name);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
