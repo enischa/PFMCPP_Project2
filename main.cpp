@@ -108,7 +108,7 @@ bool eat(int pizzaSlice, char pizzaName)
 /*
  2)
  */
-void looper(int barSize, double sampleRate = 44.1f)
+void setLoopSettings(int barSize, double sampleRate = 44.1f)
 
 {
   ignoreUnused(barSize, sampleRate);
@@ -129,7 +129,7 @@ int speedUp(int distance, int elapsed)
 /*
  4)
  */
-bool airConditionerStart(int temp, bool smartSaver)
+bool startAirConditioner(int temp, bool smartSaver)
 
 {
   ignoreUnused(temp, smartSaver);
@@ -149,7 +149,7 @@ int checkOut(double pricing, float vatAmount)
 /*
  6)
  */
-double monthlySubscriptionPricing(int month, bool autoRenew)
+double selectSubscriptionModel(int month, bool autoRenew)
 
 {
   ignoreUnused(month, autoRenew);
@@ -159,7 +159,7 @@ double monthlySubscriptionPricing(int month, bool autoRenew)
 /*
  7)
  */
-double cardStatement(double dueDate, double minPayAmount)
+double payCreditCard(char banckAccount, double minPayAmount)
 
 {
   ignoreUnused(dueDate, minPayAmount);
@@ -179,7 +179,7 @@ bool setTimer(int hour, int min)
 /*
  9)
  */
-char surName(int numbOfChar)
+char selectAddress(int numbOfAddress)
 
 {
   ignoreUnused(numbOfChar);
@@ -189,7 +189,7 @@ char surName(int numbOfChar)
 /*
  10)
  */
-void reaVerb(double roomSize = 12.32, bool byPass = false)
+void openReaVerbSettings(double roomSize = 12.32, bool byPass = false)
 
 {
   ignoreUnused(roomSize, byPass);
