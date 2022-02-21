@@ -16,13 +16,13 @@ video: Chapter 2 - Part 3
  
  1) Write down the names of the 6 major primitive types available in C++  here:
  
- 
- 
- 
- 
- 
- 
- 
+ int
+ void
+ char
+ bool
+ double
+ float
+ char
  
  
 2) for each primitive type, write out 3 variable declarations inside the variableDeclaration() function on line 59.
@@ -58,11 +58,30 @@ video: Chapter 2 - Part 3
 void variableDeclarations()
 {
     //example:
-    int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
+     //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
+    int number = 5;
+    int length = 32;
+    int weight = 44;
+  
+    float speed = 77.1f;
+    float ratio = 23.1f;
+    float distance = 42.234f;
+  
+    double pi = 3.14159;
+    double trueSize = 126.324535;
+    double counter = 18.77;
+  
+    bool end = true;
+    bool visible = false;
+    bool afterdeath = false;
+  
+    char firstLetter = 'E';
+    char lastLetter = 'S';
+    char buttonName = 'X';
+  
     
-
-    
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+  
+    ignoreUnused(number, length, weight, speed, ratio, distance, pi, trueSize, counter, end, visible, afterdeath, firstLetter, lastLetter, buttonName); //passing each variable declared to the ignoreUnused() function
 }
 
 /*
@@ -79,43 +98,83 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
-
+bool eat(int pizzaSlice, char pizzaName)
+{
+    ignoreUnused(pizzaSlice, pizzaName);
+    return {};  
+}
 /*
  2)
  */
+void setLoopSettings(int barSize, float sampleRate = 44.1f)
+{
+    ignoreUnused(barSize, sampleRate);
+}
 
 /*
  3)
  */
+int speedUp(int distance, int elapsed)
+{
+    ignoreUnused(distance, elapsed);
+    return {};  
+}
 
 /*
  4)
  */
-
+bool startAirConditioner(int temp, bool smartSaver)
+{
+    ignoreUnused(temp, smartSaver);
+    return {};  
+}
 /*
  5)
  */
-
+int checkOut(double pricing, float vatAmount)
+{
+    ignoreUnused(pricing, vatAmount);
+    return {};  
+}
 /*
  6)
  */
-
+double selectSubscriptionModel(int month, bool autoRenew)
+{
+    ignoreUnused(month, autoRenew);
+    return {};  
+}
 /*
  7)
  */
-
+double payCreditCard(int bankAccount, double minPayAmount)
+{
+    ignoreUnused(bankAccount, minPayAmount);
+    return {};
+}
 /*
  8)
  */
-
+bool setTimer(int hour, int min)
+{
+    ignoreUnused(hour, min);
+    return{};
+}
 /*
  9)
  */
-
+char selectAddress(int numbOfAddress)
+{
+    ignoreUnused(numbOfAddress);
+    return{};
+}
 /*
  10)
  */
-
+void openReaVerbSettings(double roomSize = 12.32, bool byPass = false)
+{
+    ignoreUnused(roomSize, byPass);
+}
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
 
@@ -136,27 +195,27 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    
+    auto eatedPizza = eat(3, 'V');
     //2)
-    
+    setLoopSettings(4, 44.1f);
     //3)
-    
+    auto speed = speedUp(36, 15);
     //4)
-    
+    auto airConditioner = startAirConditioner(27, false);
     //5)
-    
+    checkOut(39.90, 18.2f);
     //6)
-    
+    auto subscription = selectSubscriptionModel(7, true);
     //7)
-    
+    auto creditCard = payCreditCard(1, 390.20);
     //8)
-    
+    auto timer = setTimer(12, 30);
     //9)
-    
+    auto name = selectAddress(5);
     //10)
+    openReaVerbSettings(10.40, true);
     
-    
-    ignoreUnused(carRented);
+    ignoreUnused(carRented, eatedPizza, setLoopSettings, speed, airConditioner, checkOut, subscription, creditCard, timer, name);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
