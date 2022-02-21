@@ -100,15 +100,15 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  */
 bool eat(int pizzaSlice, char pizzaName)
 {
-  ignoreUnused(pizzaSlice, pizzaName);
-  return {};  
+    ignoreUnused(pizzaSlice, pizzaName);
+    return {};  
 }
 /*
  2)
  */
 void setLoopSettings(int barSize, float sampleRate = 44.1f)
 {
-  ignoreUnused(barSize, sampleRate);
+    ignoreUnused(barSize, sampleRate);
 }
 
 /*
@@ -116,8 +116,8 @@ void setLoopSettings(int barSize, float sampleRate = 44.1f)
  */
 int speedUp(int distance, int elapsed)
 {
-  ignoreUnused(distance, elapsed);
-  return {};  
+    ignoreUnused(distance, elapsed);
+    return {};  
 }
 
 /*
@@ -125,55 +125,55 @@ int speedUp(int distance, int elapsed)
  */
 bool startAirConditioner(int temp, bool smartSaver)
 {
-  ignoreUnused(temp, smartSaver);
-  return {};  
+    ignoreUnused(temp, smartSaver);
+    return {};  
 }
 /*
  5)
  */
 int checkOut(double pricing, float vatAmount)
 {
-  ignoreUnused(pricing, vatAmount);
-  return {};  
+    ignoreUnused(pricing, vatAmount);
+    return {};  
 }
 /*
  6)
  */
 double selectSubscriptionModel(int month, bool autoRenew)
 {
-  ignoreUnused(month, autoRenew);
-  return {};  
+    ignoreUnused(month, autoRenew);
+    return {};  
 }
 /*
  7)
  */
 double payCreditCard(int bankAccount, double minPayAmount)
 {
-  ignoreUnused(bankAccount, minPayAmount);
-  return {};
+    ignoreUnused(bankAccount, minPayAmount);
+    return {};
 }
 /*
  8)
  */
 bool setTimer(int hour, int min)
 {
-  ignoreUnused(hour, min);
-  return{};
+    ignoreUnused(hour, min);
+    return{};
 }
 /*
  9)
  */
 char selectAddress(int numbOfAddress)
 {
-  ignoreUnused(numbOfAddress);
-  return{};
+    ignoreUnused(numbOfAddress);
+    return{};
 }
 /*
  10)
  */
 void openReaVerbSettings(double roomSize = 12.32, bool byPass = false)
 {
-  ignoreUnused(roomSize, byPass);
+    ignoreUnused(roomSize, byPass);
 }
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
